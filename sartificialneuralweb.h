@@ -30,9 +30,12 @@ private slots:
 
     void on_bRateUp_clicked();
 
+    void on_bCreateNew_clicked();
+
 private:
     Ui::SArtificialNeuralWeb *ui;
     SArtificialNeuralWebKernel * anw;
+    NeuronMap currentMap;
 };
 
 #endif // SARTIFICIALNEURALWEB_H

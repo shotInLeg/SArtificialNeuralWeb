@@ -24,7 +24,10 @@ void SArtificialNeuralWeb::on_bSelectImg_clicked()
 
 void SArtificialNeuralWeb::on_bLoad_clicked()
 {
+    QString fileName = ui->ePathToImg->text();
+    QImage img( fileName );
 
+    ui->imgWork->setPixmap( QPixmap::fromImage( img ) );
 }
 
 ///Страница обучения
