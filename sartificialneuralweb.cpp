@@ -31,6 +31,8 @@ void SArtificialNeuralWeb::on_bLoad_clicked()
 
     QVector<NeuronAnswer> neurons = anw->overlaps( SANWK::neuronMapFromImage( img ) );
 
+    ui->spRateUp->setMaximum( neurons.size() );
+
     printResults( ui->twResults, neurons );
 
     int max = -1;
