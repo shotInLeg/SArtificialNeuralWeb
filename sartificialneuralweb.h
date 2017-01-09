@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QFile>
 #include <QFileDialog>
+#include <QTableWidget>
 
 #include "SArtificialNeuralWebKernel/sartificialneuralwebkernel.h"
 
@@ -31,6 +32,8 @@ private slots:
     void on_bRateUp_clicked();
 
     void on_bCreateNew_clicked();
+
+    void printResults( QTableWidget * table, const QVector<NeuronAnswer>& neurons );
 
 private:
     Ui::SArtificialNeuralWeb *ui;
