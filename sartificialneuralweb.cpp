@@ -33,8 +33,6 @@ void SArtificialNeuralWeb::on_bLoad_clicked()
 
     ui->spRateUp->setMaximum( neurons.size() );
 
-    printResults( ui->twResults, neurons );
-
     int max = -1;
     for( int i = 0; i < neurons.size(); i++ )
     {
@@ -50,6 +48,9 @@ void SArtificialNeuralWeb::on_bLoad_clicked()
         ui->lBestResult->setText( neurons.at(max).name );
     }
 }
+
+
+
 ///Страница обучения
 
 void SArtificialNeuralWeb::on_bLernSelectImg_clicked()

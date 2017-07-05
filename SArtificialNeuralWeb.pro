@@ -16,7 +16,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
         sartificialneuralweb.cpp \
-    SArtificialNeuralWebKernel/sartificialneuralwebkernel.cpp
+    SArtificialNeuralWebKernel/sartificialneuralwebkernel.cpp \
+    SArtificialNeuralWebKernel/neuron.cpp \
+    SArtificialNeuralWebKernel/neuronanswer.cpp
 
 HEADERS  += sartificialneuralweb.h \
     SArtificialNeuralWebKernel/sartificialneuralwebkernel.h
